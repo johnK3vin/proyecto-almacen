@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/estilo.css">
+    <title>Almacen Agua luna </title>
+</head>
+
+<body>
+    <header class="header-catalogo">
+        <div class="titulo-catalogo">
+            <h1>almacen agua de luna</h1>
+        </div>
+        <div class="canasta-contenedor">
+            <a href="#"><img src="canasta.png" alt="imagen de canasta"></a>
+            <div id="carrito" class="menu-vertical">
+                <table id="lista-carrito" class="table">
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>precio</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <a href="#" id="vaciar-carrito">Vaciar Carrito</a>
+                <a href="#" id="procesar-pedido">Procesar Compra</a>
+            </div>
+        </div>
+        <div class="buscador-container">
+            <input type="search" id="buscador-input" placeholder="Nombre del productos..">
+            <button id="buscador"><img src="lupa.png" alt="buscador"></button>
+        </div>
+    </header>
+
+    <div class="contenedor-catalogo">
+        <div class="contenedor-productos">
+            <button class="button-valor" onclick="filtroProducto('todos')">Todos</button>
+            <button class="button-valor" onclick="filtroProducto('verdura')">Frutas y verduras</button>
+            <button class="button-valor" onclick="filtroProducto('aseo')">Aseo</button>
+            <button class="button-valor" onclick="filtroProducto('dulces')">Dulces</button>
+            <button class="button-valor" onclick="filtroProducto('lacteos')">Lacteos</button>
+            <button class="button-valor" onclick="filtroProducto('gaseosa')">Gaseosas</button>
+            <button class="button-valor" onclick="filtroProducto('cocina')">Cocina</button>
+        </div>
+        <div id="catalogoProductos"></div>
+    </div>
+
+    
+    <script src="main.js"></script>
+    <script src="carrito.js"></script>
+    <script src="pedido.js"></script>
+</body>
+</html>
