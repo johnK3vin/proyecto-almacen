@@ -2,7 +2,7 @@ class Carrito {
 
     //añadir producto al carrito 
     comprarProducto(e){
-        e.preventDefault();
+        e.preventDefault();// ocupamos e.preventDefault() para detener las acciones del navegador
         if(e.target.classList.contains('agregar-carrito')){
             const producto = e.target.parentElement.parentElement;
             this.leerDatosProducto(producto);
@@ -37,6 +37,7 @@ class Carrito {
         this.guardarProductoLocalStorage(producto);
     }
 
+    //eliminar el producto, esta funcionando pero al hacer click sobre la X no me funciona, solo si es por debajo
     eliminarProducto(e){
         e.preventDefault();
         let producto, productoID;
@@ -55,6 +56,9 @@ class Carrito {
         return false;
     }
 
+    //locarStorage 
+
+    
     guardarProductoLocalStorage(producto){
         let productos;
         productos = this.obtenerProductosLocalStorage();

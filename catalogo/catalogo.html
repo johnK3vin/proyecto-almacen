@@ -14,6 +14,8 @@
         <div class="titulo-catalogo">
             <h1>almacen agua de luna</h1>
         </div>
+
+        <!-- carrito -->
         <div class="canasta-contenedor">
             <a href="#"><img src="canasta.png" alt="imagen de canasta"></a>
             <div id="carrito" class="menu-vertical">
@@ -27,11 +29,11 @@
                     </thead>
                     <tbody></tbody>
                 </table>
-
                 <a href="#" id="vaciar-carrito">Vaciar Carrito</a>
                 <a href="#" id="procesar-pedido">Procesar Compra</a>
             </div>
         </div>
+        <!-- buscador -->
         <div class="buscador-container">
             <input type="search" id="buscador-input" placeholder="Nombre del productos..">
             <button id="buscador"><img src="lupa.png" alt="buscador"></button>
@@ -39,6 +41,7 @@
     </header>
 
     <div class="contenedor-catalogo">
+        <!-- filtro -->
         <div class="contenedor-productos">
             <button class="button-valor" onclick="filtroProducto('todos')">Todos</button>
             <button class="button-valor" onclick="filtroProducto('verdura')">Frutas y verduras</button>
@@ -48,10 +51,11 @@
             <button class="button-valor" onclick="filtroProducto('gaseosa')">Gaseosas</button>
             <button class="button-valor" onclick="filtroProducto('cocina')">Cocina</button>
         </div>
+        <!-- contenedor de todos los productos a mostrar -->
         <div id="catalogoProductos"></div>
     </div>
 
-    
+    <!-- script -->
     <script src="main.js"></script>
     <script src="carrito.js"></script>
     <script src="pedido.js"></script>

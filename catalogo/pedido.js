@@ -1,3 +1,4 @@
+
 const carro = new Carrito();
 const carrito = document.getElementById('carrito');
 const productos = document.getElementById('catalogoProductos');
@@ -6,6 +7,7 @@ const vaciarCarritoBtn = document.getElementById('vaciar-carrito');
 
 cargarEventos();
 
+//con esta funcion nos ayudara a cargar los eventos asociados al carrito 
 function cargarEventos(){
     productos.addEventListener('click', (e)=> {carro.comprarProducto(e)});
 
