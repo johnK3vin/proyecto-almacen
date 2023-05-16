@@ -1,6 +1,6 @@
 let dataProductos = {
   data: [
-    {id: '001', name: "platano", type: "verdura", price: "300", img: "platano.png" },
+    {id: '001', name: "platano", type: "verdura", price: "300", img: "platano.png"},
     {id: '002', name: "manzana", type: "verdura", price: "200", img: "manzana.png" },
     {id: '003', name: "lechuga", type: "verdura", price: "500", img: "lechuga.png" },
     {id: '004', name: "zanahoria", type: "verdura", price: "100", img: "zanahoria.png" },
@@ -17,12 +17,12 @@ let dataProductos = {
     {id: '015', name: "fanta", type: "gaseosa", price: "1600", img: "fanta.png" },
     {id: '016', name: "sprite", type: "gaseosa", price: "1350", img: "sprite.png" },
     {id: '017', name: "monster", type: "gaseosa", price: "1500", img: "monster.png" },
-    {id: '018', name: "gatorade", type: "gaseosa", price: "1200", img: "gatorade.png" },
+    {id: '018', name: "gatorade", type: "gaseosa", price: "1200", img: "gatorade.png"},
     {id: '019', name: "yogurt", type: "lacteos", price: "200", img: "yogurt.png" },
     {id: '020', name: "queso", type: "lacteos", price: "4000", img: "queso.png" },
     {id: '021', name: "huevos", type: "lacteos", price: "300", img: "huevos.png" },
     {id: '022', name: "leche", type: "lacteos", price: "950", img: "leche.png" },
-    {id: '023', name: "quesoblanco", type: "lacteos", price: "3000", img: "quesoBlanco.png"},
+    {id: '023', name: "quesoblanco", type: "lacteos", price: "3000", img: "quesoBlanco.png" },
     {id: '024',name: "espagueti", type: "cocina", price: "600", img: "espagueti.png" },
     {id: '025',name: "arroz", type: "cocina", price: "700", img: "arros.png" },
     {id: '026',name: "azucar", type: "cocina", price: "800", img: "azucar.png" },
@@ -61,7 +61,7 @@ for (let i of dataProductos.data) {
   contenedor.appendChild(name);
   //precio
   let price = document.createElement("h6");
-  price.innerText = "$" + i.price;
+  price.innerText = i.price;
   contenedor.appendChild(price);
   //button comprar
   let compra = document.createElement("a");
