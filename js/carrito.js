@@ -181,9 +181,6 @@ class Carrito {
             total = total + elemento;
             console.log(total)
         }
-        document.getElementById('total').innerHTML = "$" + total.toFixed(2);
+        document.getElementById('total').innerHTML = "$" + total;
     }
 }
-
-
-

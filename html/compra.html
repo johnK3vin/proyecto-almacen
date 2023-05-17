@@ -27,7 +27,7 @@
 
     <header class="header-catalogo">
         <div class="titulo-catalogo">
-            <a href="../catalogo/catalogo.html">Almacen agua de luna</a>
+            <a href="../html/catalogo.html">Almacen agua de luna</a>
         </div>
     </header>
     <main class="main-compra">
@@ -69,21 +69,20 @@
                             </tr>
                         </thead>
                         <tbody></tbody>
-                        <tr>
-                            <th class="text-end">TOTAL :</th>
+                        <tr class="total-text">
+                            <th>TOTAL :</th>
                             <th>
-                                <p id="total"></p>
+                                <p class="text-danger" id="total"></p>
                             </th>
-                            <!-- <th ></th> -->
                         </tr>
                     </table>
                 </div>
                 <div class="cargando-img">
-                    <img id="cargando" style="width:100px;" src="../catalogo/cargando.gif" alt="cargando">
+                    <img id="cargando" style="width:100px;" src="../img/cargando.gif" alt="cargando">
                 </div>
                 <div class="seguir-compra">
                     <div class="seguirCompra ">
-                        <a href="../catalogo/catalogo.html">Seguir comprando</a>
+                        <a href="../html/catalogo.html">Seguir comprando</a>
                     </div>
                     <div class="realizarCompra">
                         <button id="procesar-compra">Realizar compra </button>
@@ -100,8 +99,8 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
     <!-- mis script -->
-    <script src="../catalogo/carrito.js"></script>
-    <script src="../catalogo/compra.js"></script>
+    <script src="../js/carrito.js"></script>
+    <script src="../js/compra.js"></script>
 </body>
 
 </html>

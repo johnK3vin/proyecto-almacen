@@ -8,25 +8,24 @@
     <title>Almacen</title>
 </head>
 <body>
-    <div class="contenedor">
+    <div class="contenedor-inicio">
         <div class="titulo">
             <h1>Almacen Agua de Luna</h1>
-            <p>Mi tienda</p>
+            <p>Iniciar seccion</p>
         </div>
-        <div class="contenedor-inicio">
-            <!-- catalogo donde se mostraran todos los productos y podras realizar tu compra -->
-            <div>
-                <a href="catalogo/catalogo.html"><img src="catalogo/canasta.png" alt="catalogo de productos"></a>
+        <form id="inicio-seccion">
+            <div class="form-inicio">
+                <input type="text" id="name" placeholder="Nombre..">
             </div>
-            <!-- inventario donde podras ver todos los productos que tienes y si se agotan -->
-            <div>
-                <a href="./html/catalgo.html"><img src="catalogo/inventario.png" alt="gestion de inventario"></a>
+            <div class="form-inicio">
+                <input type="text" id="pass" placeholder="Contraseña..">
             </div>
-            <!-- historial de compra podras ver todos los pedidos ralizados -->
-            <div>
-                <a href="./html/catalgo.html"><img src="catalogo/historial.png" alt="historial de compras"></a>
-            </div>
-        </div>
+            <button id="boton-inicio">Iniciar seccion</button>
+        </form>
     </div>
+
+    <script src="js/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
 </html>

@@ -17,7 +17,7 @@
 
         <!-- carrito -->
         <div class="canasta-contenedor">
-            <a href="#"><img src="canasta.png" alt="imagen de canasta"></a>
+            <a href="#"><img src="../img/canasta.png" alt="imagen de canasta"></a>
             <div id="carrito" class="menu-vertical">
                 <table id="lista-carrito" class="table">
                     <thead>
@@ -36,7 +36,7 @@
         <!-- buscador -->
         <div class="buscador-container">
             <input type="search" id="buscador-input" placeholder="Nombre del productos..">
-            <button id="buscador"><img src="lupa.png" alt="buscador"></button>
+            <button id="buscador"><img src="../img/lupa.png" alt="buscador"></button>
         </div>
     </header>
 
@@ -52,7 +52,9 @@
             <button class="button-valor" onclick="filtroProducto('cocina')">Cocina</button>
         </div>
         <!-- contenedor de todos los productos a mostrar -->
-        <div id="catalogoProductos"></div>
+        <div id="catalogoProductos">
+            <p class="busquedaText">Producto no encontrado</p>
+        </div>
     </div>
 
     <!-- script sweetalert-->
@@ -60,8 +62,8 @@
     <!-- script bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- mis script -->
-    <script src="main.js"></script>
-    <script src="carrito.js"></script>
-    <script src="pedido.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/carrito.js"></script>
+    <script src="../js/pedido.js"></script>
 </body>
 </html>

@@ -29,7 +29,7 @@ function procesarCompra(e) {
       timer: 3000,
       showConfirmButtom: false,
     }).then(function () {
-      window.location = "../catalogo/catalogo.html";
+      window.location = "../html/catalogo.html";
     });
   } else if (cliente.value === "" || correo.value === "") {
     Swal.fire({
@@ -63,7 +63,7 @@ function procesarCompra(e) {
     cargandoGif.style.display = "block";
 
     const enviado = document.createElement("img");
-    enviado.src = "../catalogo/mail.gif";
+    enviado.src = "../img/mail.gif";
     enviado.style.display = "block";
     enviado.width = "100";
 
@@ -73,7 +73,7 @@ function procesarCompra(e) {
       setTimeout(() => {
         enviado.remove();
         compra.vaciarLocarStorage();
-        window.location = "../catalogo/catalogo.html";
+        window.location = "../html/catalogo.html";
       }, 3000);
     }, 3000);
   }
