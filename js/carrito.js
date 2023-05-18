@@ -183,4 +183,27 @@ class Carrito {
         }
         document.getElementById('total').innerHTML = "$" + total;
     }
+
+    obtenerEvento(e) {
+        e.preventDefault();
+        let id, cantidad, producto, productosLS;
+        if (e.target.classList.contains('cantidad')) {
+            producto = e.target.parentElement.parentElement;
+            id = producto.querySelector('button').getAttribute('data-id');
+            cantidad = producto.querySelector('input').value;
+            let actualizarMontos = document.querySelectorAll('#total');
+            productosLS = this.obtenerProductosLocalStorage();
+            productosLS.forEach(function (productoLS, index) {
+                if (productoLS.id === id) {
+                    productoLS.cantidad = cantidad;                    
+                    actualizarMontos[index].innerHTML = Number(cantidad * productosLS[index].precio);
+                }    
+            });
+            localStorage.setItem('productos', JSON.stringify(productosLS));
+            
+        }
+        else {
+            console.log("click afuera");
+        }
+    }
 }

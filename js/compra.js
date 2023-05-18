@@ -15,6 +15,10 @@ function cargarEvento() {
   carrito.addEventListener("click", (e) => {compra.eliminarProducto(e)});
 
   procesarCrompraBtn.addEventListener("click", procesarCompra);
+
+  carrito.addEventListener('change', (e) => { compra.obtenerEvento(e) });
+
+  carrito.addEventListener('keyup', (e) => { compra.obtenerEvento(e) });
 }
 
 function procesarCompra(e) {

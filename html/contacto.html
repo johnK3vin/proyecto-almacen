@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/estilo.css">
+    <title>Contactos</title>
+</head>
+<body>
+    <header class="header-catalogo">
+        <div class="titulo-catalogo">
+            <a href="catalogo.html">Almacen agua de luna</a>
+        </div>
+
+        <!-- carrito -->
+        <div class="canasta-contenedor">
+            <a href="#"><img src="../img/canasta.png" alt="imagen de canasta"></a>
+            <div id="carrito" class="menu-vertical">
+                <table id="lista-carrito" class="table">
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>precio</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <a href="#" id="vaciar-carrito">Vaciar Carrito</a>
+                <a href="#" id="procesar-pedido">Procesar Compra</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="contenedor_contactos">
+        <div class="text_contact">
+            <h1>Contacta con nosotros</h1>
+        </div>
+        <form class="contactos" action="https://formspree.io/f/meqwdnye"
+        method="POST">
+            <div class="div_contactos">
+                <input type="text" id="name_contact" placeholder="Ingrese su nombre">
+            </div>
+            <div class="div_contactos">
+                <input type="text" id="gmail_contact" placeholder="Ingrese su gmail">
+            </div>
+            <div class="div_contactos">
+                <textarea placeholder="Ingrese su mensaje" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+            </div>
+            <button id="button_contactos" type="submit">Enviar mensaje</button>
+        </form>
+    </div>
+
+    <script src="../js/contacto.js"></script>
+</body>
+</html>
